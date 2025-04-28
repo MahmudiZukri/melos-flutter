@@ -123,7 +123,7 @@ class _LatestUpdatePageState extends State<LatestUpdatePage> {
               }
             },
             child: Container(),
-          )
+          ),
         ],
         child: SmartRefresher(
           controller: _refreshController,

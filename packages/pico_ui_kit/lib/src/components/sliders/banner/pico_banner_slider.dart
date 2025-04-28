@@ -1,5 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide CarouselController;
 import 'package:pico_ui_kit/pico_ui_kit.dart';
 import 'package:pico_ui_kit/src/components/images/network_image/pico_network_image.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -22,12 +22,12 @@ class PicoBannerSlider<T> extends StatefulWidget {
 
 class _PicoBannerSliderState<T> extends State<PicoBannerSlider<T>> {
   late final ValueNotifier<int> _activePageNotifier;
-  late final CarouselController _carouselController;
+  late final CarouselSliderController _carouselController;
 
   @override
   void initState() {
     super.initState();
-    _carouselController = CarouselController();
+    _carouselController = CarouselSliderController();
     _activePageNotifier = ValueNotifier(0);
   }
 

@@ -189,18 +189,18 @@ scripts:
   test:combine-coverage:
     run: MELOS_ROOT_PATH/scripts/combine-coverage.sh MELOS_ROOT_PATH
     description: Combine individual lcov coverage into a single lcov coverage file
-    select-package:
-      dir-exists:
-        - test
-        - coverage
+    # select-package:
+    #   dir-exists:
+    #     - test
+    #     - coverage
 
   test:generate-html-coverage:
     run: MELOS_ROOT_PATH/scripts/generate-html-coverage.sh MELOS_ROOT_PATH
     description: Take combined lcov file and generate a human-readable HTML report
-    select-package:
-      dir-exists:
-        - test
-        - coverage
+    # select-package:
+    #   dir-exists:
+    #     - test
+    #     - coverage
 
   update-goldens:select:
     run: melos exec -- "very_good test --concurrency=4 --update-goldens"

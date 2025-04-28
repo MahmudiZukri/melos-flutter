@@ -1,0 +1,2 @@
+C:/FlutterProjects/PICO_SULTENG_FLUTTER/app/pico/android/app/.cxx/Debug/662e4i83/x86/CMakeFiles/edit_cache.dir
+C:/FlutterProjects/PICO_SULTENG_FLUTTER/app/pico/android/app/.cxx/Debug/662e4i83/x86/CMakeFiles/rebuild_cache.dir

@@ -1,7 +1,7 @@
 import 'package:core/src/di/service_locator.config.dart';
 import 'package:dependencies/dependencies.dart';
 import 'package:home/home.dart';
-import 'package:statistic/statistic.dart';
+import 'package:statistic/statistic.dart'; // <-- add this!
 
 final getIt = GetIt.instance;
 

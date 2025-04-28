@@ -1,5 +1,5 @@
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart' as carousel_slider;
+import 'package:flutter/material.dart' hide CarouselController;
 import 'package:pico_ui_kit/pico_ui_kit.dart';
 
 class PicoBannerSliderSkeleton extends StatelessWidget {
@@ -10,7 +10,7 @@ class PicoBannerSliderSkeleton extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          CarouselSlider.builder(
+          carousel_slider.CarouselSlider.builder(
             itemCount: 3,
             itemBuilder: (_, __, ___) => Padding(
               padding: EdgeInsets.symmetric(
@@ -27,7 +27,7 @@ class PicoBannerSliderSkeleton extends StatelessWidget {
                 ),
               ),
             ),
-            options: CarouselOptions(
+            options: carousel_slider.CarouselOptions(
               aspectRatio: 2,
               viewportFraction: 0.9,
             ),
